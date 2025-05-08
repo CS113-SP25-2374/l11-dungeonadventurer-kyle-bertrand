@@ -8,6 +8,11 @@ public class DungeonMap {
     public static final char GEM = 'G';
     public static final char EXIT = 'X';
 
+    public static boolean isValid(int x, int y){
+        char c = MAP[y][x];
+        return c != WALL;
+    }
+
     public static final char[][] MAP = {
             {'#','#','#','#','#','#','#','#','#','#'},
             {'#','E','.','.','.','.','.','.','X','#'},
